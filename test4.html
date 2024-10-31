@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 4</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 170px 2fr 170px;
+            place-content: center;
+            place-items: center;
+            gap: 1rem;
+            margin: 2rem 4rem;
+        }
+
+        
+        .left {
+            grid-column: 1;
+            grid-row: 1 / 3;
+            border-radius: 5px;
+        }
+        .left .create-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            border-radius: inherit;
+            margin-bottom: 20px;
+        }
+        .create-wrapper .create-and-schedule-wrapper p {
+            text-align: left;
+            margin: 0.5em;
+            font-size: 2em;
+        }
+        .create-wrapper .create-a-post-wrapper {
+            position: relative;
+        }
+        .create-a-post-wrapper p {
+            color: #800080;
+            padding: 15px;
+            background-color: gold;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .create-a-post-wrapper p .fa-star {
+            font-size: 12px;
+        }
+        .create-a-post-wrapper .fa-paper-plane {
+            position: absolute;
+            top: 79%;
+            right: 35%;
+        }
+       
+
+                /* write content */
+        .left .write-content {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            width: inherit;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            background-color: gold;
+            margin-top: 20px;
+            border-radius: inherit;
+        }
+        .write-content p {
+            text-align: left;
+            height: 30%;
+            line-height: 25px;
+            margin: 0.4em 0.4em 0;
+            font-size: 1.8em;
+        }
+        .write-content .chat-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 60%;
+            background-color: #fff;
+            border-radius: inherit;
+        }
+        .chat-component-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 0.4em;
+            gap: 15px;
+        }
+        .first-chat {
+            display: flex;
+            gap: 2px;
+        }
+        .first-chat small {
+            display: block;
+            text-align: right;
+            padding: 5px;
+            background-color:bisque;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        .first-chat img {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(137, 43, 226, 0.491);
+            border-radius: 50%;
+        }
+
+        .second-chat {
+            display: flex;
+        }
+        .second-chat small {
+            display: block;
+            text-align: left;
+            padding: 5px;
+            background-color:bisque;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        .second-chat .fa-star {
+            padding: 5px;
+            background-color: azure;
+        }
+        .circle {
+            display: flex;
+            position: absolute;
+            top: 22%;
+            right: -15%;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .inner-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 60%;
+            background-color: gold;
+            border-radius: inherit;
+        }
+       
+        /* .left div p span {
+            color: #800080;
+            font-style: oblique;
+        } */
+
+        .right {
+            grid-column: 3;
+            grid-row: 1 / 2;
+        }
+
+        .middle {
+            grid-column: 2 / 2;
+            grid-row: 1 / 3;
+        }
+
+        .bottom {
+            grid-column: 2 / 2;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+       <section class="left">
+         <div class="create-wrapper">
+            <div class="create-and-schedule-wrapper">
+               <p>Create and schedule content 
+               <span>quicker.</span> 
+            </div>
+            <div class="create-a-post-wrapper">
+               <p>
+                   Create a post
+                   <i class="fa-solid fa-star"></i>
+               </p>
+               <i class="fa-solid fa-paper-plane"></i>
+            </div>
+           </p>
+         </div>
+
+
+                <!-- write content -->
+         <div class="write-content">
+           <p>Write your content using AI.</p>
+           <div class="chat-wrapper">
+             <div class="chat-component-container">
+                <div class="first-chat">
+                   <small>Give me a 5 tips to growth my followers on insta!</small>
+                   <img src="" alt="picture">
+                </div>
+                <div class="second-chat">
+                    <i class="fa-solid fa-star"></i>
+                    <small>centainly! Here are five tips to help you grown your instagram</small>
+                </div>
+                <div class="circle">
+                    <div class="inner-circle"><i class="fa-solid fa-arrow-up" style="color: #800080; font-size: 20px;"></i></div>
+                </div>
+                <div></div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section class="right">right</section>
+       <section class="middle">middle</section>
+       <section class="bottom">bottom</section>
+    </main>
+</body>
+</html>
